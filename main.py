@@ -38,7 +38,7 @@ def print_version():
     return
 
 def web_scrapper():
-    soup = BeautifulSoup("<p>Some<b>bad<i>HTML")
+    soup = BeautifulSoup("<p>Some<b>bad<i>HTML", "html.parser")
     print(soup.prettify())
     return
 
@@ -46,8 +46,8 @@ def main():
     hello_world()
     #print_version()
     #print_hi('PyCharm')
-    #web_scrapper()
-    ##draw_circle()
+    web_scrapper()
+    #draw_circle() # tkinter does not run under Ubuntu using WSL
     return
 #
 
