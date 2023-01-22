@@ -41,7 +41,7 @@ def main():
     print_version()
     print_hi('PyCharm')
     web_scrapper()
-    draw_circle()
+    ##draw_circle()
     return
 #
 
