@@ -15,7 +15,19 @@ git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
+
+# either with HTTPS
 git remote add origin https://github.com/kjhasdghj/python-helloworld01.git
+
+# or via SSH
+git remote add origin git@github.com:kjhasdghj/python-helloworld01.git
+
 git push -u origin main
+```
+
+List public parts of SSH keys in my HOME-directory:
+
+```
+ls ~/.ssh/id_*.pub
 ```
 
