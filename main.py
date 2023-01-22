@@ -3,7 +3,6 @@
 # Press Umschalt+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 import time
-from bs4 import BeautifulSoup
 import sys
 
 def hello_world() :
@@ -37,16 +36,26 @@ def print_version():
     print(f'Wir verwenden Python {sys.version}')
     return
 
-def web_scrapper():
+def bs_example():
+    from bs4 import BeautifulSoup
+
     soup = BeautifulSoup("<p>Some<b>bad<i>HTML", "html.parser")
     print(soup.prettify())
+    return
+
+def selenium_example():
+    from selenium import webdriver
+
+    browser = webdriver.Firefox()
+    browser.get('http://selenium.dev/')
     return
 
 def main():
     hello_world()
     #print_version()
     #print_hi('PyCharm')
-    web_scrapper()
+    bs_example()
+    selenium_example()
     #draw_circle() # tkinter does not run under Ubuntu using WSL
     return
 #
