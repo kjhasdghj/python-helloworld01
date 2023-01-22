@@ -2,12 +2,13 @@
 
 # Press Umschalt+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-import tkinter
-import tkinter as tk
 import time
 from bs4 import BeautifulSoup
 import sys
 
+def hello_world() :
+    print("Hello World!")
+    return
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -15,6 +16,10 @@ def print_hi(name):
     return
 
 def draw_circle() :
+    # tkinter funktioniert unter Windows, aber nicht unter Ubuntu
+    import tkinter
+    import tkinter as tk
+
     root = tk.Tk()
     root.title("Yellow Circle")
 
@@ -38,9 +43,10 @@ def web_scrapper():
     return
 
 def main():
-    print_version()
-    print_hi('PyCharm')
-    web_scrapper()
+    hello_world()
+    #print_version()
+    #print_hi('PyCharm')
+    #web_scrapper()
     ##draw_circle()
     return
 #
